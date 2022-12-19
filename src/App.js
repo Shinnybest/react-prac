@@ -1,25 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
+import TotalLike from './components/TotalLike';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+  <TotalLike />
+  <Card 
+    image="https://images.unsplash.com/photo-1544546491-1ecfecfcc75a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+    subject="Merry Christmas!"
+    days={4}
+  />
+  <Card 
+    image="https://images.unsplash.com/photo-1501213045308-cfe6e352d850?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1028&q=80"
+    subject="Happy New Year!"
+    days={15}
+  />
+  </>;
 }
 
 export default App;
