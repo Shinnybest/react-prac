@@ -8,10 +8,10 @@ export default function TotalLike() {
     return (
     <div>
         <span> total like : {cnt} {cnt > 10 ? 'hot' : 'good'}</span>
-        <Like 
+        <Like
             onClick={handleClick}
         />
-        <Like 
+        <Like
             onClick={handleClick}
         />
     </div>
